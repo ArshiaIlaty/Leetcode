@@ -1,0 +1,19 @@
+def numUniqueEmails(emails: list[str]) -> int:
+    #new =  [item.split('@') for item in emails]
+    # unique = []
+    unique = set()
+    counter = 0
+    for item in emails:
+        newItem = item.split('@')
+        local = newItem[0]
+        domain = newItem[1]
+        replcaeLocal = local.split('+')[0].replace('.', '')
+        newmail = replcaeLocal+ '@' + domain
+        unique.add(newmail)
+        # if newmail not in unique:
+        #     unique.append(newmail)
+        #     counter += 1           
+    return len(unique)
+
+
+print(numUniqueEmails(emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]))    
