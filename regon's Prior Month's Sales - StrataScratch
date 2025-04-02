@@ -1,0 +1,4 @@
+select  SUM(orders.units_sold * orders.cost_in_dollars) as revenue
+from online_orders as orders
+Join online_customers as customers on orders.customer_id = customers.id
+Where orders.date_sold BETWEEN '2022-03-30' and  '2022-05-01' and customers.state = 'Oregon';
