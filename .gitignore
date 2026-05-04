@@ -1,0 +1,14 @@
+# SpecStory project identity file
+/.project.json
+# SpecStory explanation file
+/.what-is-this.md
+.cursor/
+.specstory/
+
+*.png
+*.jpg
+.autopilot.json
+.cursorindexingignore
+.DS_Store
+
+*.json
