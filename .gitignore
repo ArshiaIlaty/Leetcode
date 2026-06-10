@@ -5,6 +5,8 @@
 .cursor/
 .specstory/
 
+__pycache__/
+
 *.png
 *.jpg
 .autopilot.json
@@ -12,3 +14,4 @@
 .DS_Store
 
 *.json
+*.jsonl
