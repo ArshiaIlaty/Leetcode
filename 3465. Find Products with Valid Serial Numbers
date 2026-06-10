@@ -1,0 +1,4 @@
+Select product_id, product_name, description
+From products
+Where description REGEXP 'SN[0-9]{4}-[0-9]{4}([^0-9]+|$)'
+Order By product_id ASC
